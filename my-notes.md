@@ -21,11 +21,11 @@ Lesson 19 - Basic Commands
   19.14. docker start <container>
   19.15. docker container logs <container>
 
-## Lesson 24 - CLI Process Monitoring
+Lesson 24 - CLI Process Monitoring
 24.1. docker container stats
 24.2. docker container inspect
 
-## Lesson 26 - Getting a Shell Inside Containers: No Need for SSH
+Lesson 26 - Getting a Shell Inside Containers: No Need for SSH
 26.1.  docker exec -it mariadb mariadb -u root -p<admin1234> # Se conecta a la bd mariadb indicando la clave de root para acceder
 26.2. docker exec -it mysql mysql -u root -p # Se conecta a la bd mysql solicitando la clave de root para acceder
 26.3. docker exec -it nginx bash # Ejecuta bash en el container nginx
@@ -37,11 +37,11 @@ Lesson 19 - Basic Commands
 docker run: Crea y arranca un contenedor nuevo (usado la primera vez que inicias la base de datos).
 docker exec: Ejecuta un comando en un contenedor ya existente (usado para interactuar con una base de datos ya creada).
 
-## Lesson 27
+Lesson 27
 27.1. docker container port <name>
 27.2. docker container inspect --format '{{ .NetworkSettings.IPAddress}}' <name>
 
-## Lesson 29 - Virtual Networks
+Lesson 29 - Virtual Networks
 29.1. docker network ls
 29.2. docker network inspect bridge
 29.3. docker network create my-app-net
@@ -50,7 +50,7 @@ docker exec: Ejecuta un comando en un contenedor ya existente (usado para intera
 29.6. docker network connect <network> <container>
 29.7. docker network disconnect <network> <container>
 
-## Lesson 35 - Robin Test
+Lesson 35 - Robin Test
 35.1. docker network create dude 
 35.2. docker container run -d --net dude --net-alias search elasticsearch:2
 35.2. docker container run --rm --net  dude alpine nslookup search
@@ -81,3 +81,6 @@ Lesson 47 - Volumes
 
 Lesson 49 - Bind Mounting
 49.1. docker container run -d --name nginx_0 -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
+
+## Section 7
+
